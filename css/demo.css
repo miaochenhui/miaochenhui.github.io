@@ -100,7 +100,9 @@ cite{
 	display:block;
 	margin:20px auto;
 }
-
+#video2{
+	clear:both;display:block;margin:20px auto;
+}
 a{
 	display:block;
 	color: black;

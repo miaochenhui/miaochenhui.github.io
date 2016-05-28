@@ -8,6 +8,17 @@
 
 var myPlaylist = [
 
+	{
+        mp3:'music/32.mp3',
+        oga:'music/1.ogg',
+        title:'生日快乐',
+        artist:'刘若英',
+        rating:5,
+        price:'',
+        duration:'03:34',
+        cover:'music/1.png',
+		buyText:'刘若英   生日快乐'
+    },
     {
         mp3:'music/1.mp3',
         oga:'music/1.ogg',

@@ -1,70 +1,95 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title></title>
+<head>
+		<meta charset="utf-8">
+		<title></title>
 	<link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon" />
 	<link rel="bookmark" href="favicon.ico" type="image/x-icon"　/>
-    <link rel="stylesheet" type="text/css" href="plugin/ttw-music-player_plugin/css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/demo.css">
-    <script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
-    <script type="text/javascript" src="plugin/ttw-music-player_plugin/jquery-jplayer/jquery.jplayer.js"></script>
-    <script type="text/javascript" src="plugin/ttw-music-player_plugin/ttw-music-player-min.js"></script>
+	<link rel="stylesheet" type="text/css" href="plugin/ttw-music-player_plugin/css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/demo.css">
+	<script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+	<script type="text/javascript" src="plugin/ttw-music-player_plugin/jquery-jplayer/jquery.jplayer.js"></script>
+	<script type="text/javascript" src="plugin/ttw-music-player_plugin/ttw-music-player-min.js"></script>
 	<script type="text/javascript" src="js/myplaylist.js"></script> 
 
-    <script type="text/javascript">
-        $(document).ready(function(){
-            var description = '就像说喜欢你，你当做是开玩笑。把曾经一起经历过的事，一字不差的说出来，你当做是我记性好。岁月会解释，你也终将明白，我的喜欢，不是玩笑话，记住回忆，也不是记性好。';
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var description = '就像说喜欢你，你当做是开玩笑。把曾经一起经历过的事，一字不差的说出来，你当做是我记性好。岁月会解释，你也终将明白，我的喜欢，不是玩笑话，记住回忆，也不是记性好。';
 
-            $('body').ttwMusicPlayer(myPlaylist, {
-                autoPlay:true, 
-                description:description,
-                jPlayer:{
-                    swfPath:'plugin/ttw-music-player_plugin/jquery-jplayer' //You need to override the default swf path any time the directory structure changes
-                }
-            });
-        });
-    </script>
-    </head>
-    <body>
-		<div id = "left">
+			$('#right').ttwMusicPlayer(myPlaylist, {
+				autoplay:true,    
+				description:description,
+				jPlayer:{
+					swfPath:'plugin/ttw-music-player_plugin/jquery-jplayer' //You need to override the default swf path any time the directory structure changes
+				}
+			});
+		});
+	</script>
+	
+</head>
+<body>
+	<div id = "container">
+		<div id= "left" >
 			<div id = "title"></div>
-			<img id = "avatar" src = "img/J.jpg"/>
+			<!--<img id = "avatar" src = "img/J.jpg" -->
 			<div id = "quot">
-				<h1>
-				一粒灰尘，挥之即去。
-				<p>每个人的口是心非、</p>
-			</h1>
-			</div>
-			<div id = "info">	
+				<blockquote >
+					<p><h1>Happy Birthday To You !</h1></p>
+					<cite>—MYWYP.</cite>
+				</blockquote>
+				<!-- <p>每个人的口是心非、</p>
+				<div id = "info">	
 				<a  href = "http://user.qzone.qq.com/852347071/4" target = "_blank">Qzone</a>
-				<!---->
+				
+				
+				-->
+			</div>
 			
+			<div id = "happy" style="display:inline-block;">
+				<video id="video1" width="280" height="220"  src="video/24.mp4" type="video/mp4" 
+				id="player1" poster="" 
+				controls="controls" preload="preload"></video>
+			</div>
+			
+			
+			<div id = "article">
+				<div>所谓曾经，就是幸福</div>
+				<br/>
+				<div>当你碰到某个让你心仪的对象 也不要马上深陷</div>
+				<div>当某天有个人向你告白 也请你慢慢发现他的好</div>
+				<div>当某天有个人对你倾吐 也不忘静静聆听他的心</div>
+				<div>欣赏你的人可以使你充满自信</div>
+				<div>批评你的人可以使你愈挫愈勇</div>
+				<div>伤害你的人可以使你更加坚强</div>
+				<div>疼惜你的人可以使你知道感恩(付出)</div>
+				<div>依赖你的人可以让你拥有能力</div>
+				<div>想依靠的对象可以让你歇歇脚</div>
+				<div>没有不好的人事物</div>
+				<div>只欠缺不好好用心体会的人</div>
+				<div>付诸热诚还以原色过个好的艺术生活</div>
+				<div>飨宴周遭，</div>
+				<div>一直以为幸福在远方，</div>
+				<div>在可以追逐的未来。</div>
+				<div>我的双眼保持著眺望，</div>
+				<div>我的双耳仔细聆听，</div>
+				<div>唯恐疏忽错过。</div>
+				<div>后来才发现，那些握过的手，</div>
+				<div>唱过的歌，流过的泪，爱过的人???</div>
+				<div>所谓的曾经，就是幸福</div>
+			</div>
+			
+			<div id = "video">
+				<video style="clear:both;display:block;margin:20px auto" width="640" height="360" src="video/13.mp4" type="video/mp4" 
+				id="player1" poster="" 
+				controls="controls" preload="preload"></video>
+			</div>
 		</div>
-		<div id = "article">
-			<div>所谓曾经，就是幸福</div>
-			<br/>
-			<div>当你碰到某个让你心仪的对象 也不要马上深陷</div>
-			<div>当某天有个人向你告白 也请你慢慢发现他的好</div>
-			<div>当某天有个人对你倾吐 也不忘静静聆听他的心</div>
-			<div>欣赏你的人可以使你充满自信</div>
-			<div>批评你的人可以使你愈挫愈勇</div>
-			<div>伤害你的人可以使你更加坚强</div>
-			<div>疼惜你的人可以使你知道感恩(付出)</div>
-			<div>依赖你的人可以让你拥有能力</div>
-			<div>想依靠的对象可以让你歇歇脚</div>
-			<div>没有不好的人事物</div>
-			<div>只欠缺不好好用心体会的人</div>
-			<div>付诸热诚还以原色过个好的艺术生活</div>
-			<div>飨宴周遭，</div>
-			<div>一直以为幸福在远方，</div>
-			<div>在可以追逐的未来。</div>
-			<div>我的双眼保持著眺望，</div>
-			<div>我的双耳仔细聆听，</div>
-			<div>唯恐疏忽错过。</div>
-			<div>后来才发现，那些握过的手，</div>
-			<div>唱过的歌，流过的泪，爱过的人???</div>
-			<div>所谓的曾经，就是幸福</div>
-		</div>
-    </body>
+		<div id="right"></div>
+		
+		
+		
+		
+	</div>
+	
+</body>
 </html>

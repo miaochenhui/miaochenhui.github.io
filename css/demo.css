@@ -51,10 +51,27 @@ body {
 
 
 
-#left{
-	display:inline-block;
+*{
+	margin:0;padding:0;
 }
 
+
+#container{
+	margin:0 auto;
+}
+
+#left{
+	display:inline-block;
+	float:left;
+	width:60%;
+}
+
+
+#right{
+	display:inline-block;
+	margin:20px -30px 20px 20px ;
+	width:40%;
+}
 
 #info{
 	display:inline-block;
@@ -67,7 +84,21 @@ body {
 	width:70px;
 }
 #quot{
-	display:inline-block;	
+	display:inline-block;
+	margin:20px;
+	position:relative;
+	top:-170px;
+}
+
+
+cite{
+	float:right;	
+}
+
+#video1{
+	clear:both;
+	display:block;
+	margin:20px auto;
 }
 
 a{
@@ -80,7 +111,7 @@ a{
 
 
 h1{
-	color:#C35673;
+	/*color:#C35673;*/
 }
 
 p{
@@ -88,7 +119,7 @@ p{
 }
 
 #article{
-	margin-top:80px;
+	margin-top:-50px;
 	margin-left:260px;
 }
 
